@@ -164,12 +164,6 @@ footer{
     color: lightgray;
 }
 
-footer img{
-    width: 30px;
-    height: auto;
-    margin: 5px;
-}
-
 /* CAROUSEL BOOTSTRAP */
 .carousel-item{
     height: 500px;
