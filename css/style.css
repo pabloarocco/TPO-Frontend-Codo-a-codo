@@ -322,7 +322,11 @@ footer a i{
 
     ul.menu li{
         width: 100%;
-        display: none;
+    }
+    
+    nav{
+        position: relative;
+        z-index: 121;
     }
 
     .galeria{
