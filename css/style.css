@@ -129,6 +129,10 @@ input[type=submit]:hover {
     background-color: #45a049;
 }
 
+textarea{
+    height:200px
+}
+
 #contacto h3{
     color: white;
     font-family:fantasy;
