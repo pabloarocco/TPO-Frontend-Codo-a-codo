@@ -295,6 +295,7 @@ footer a i{
     section{
         width: 100%;
         height: auto;
+        margin-top: 50px;
     }
 
     footer{
@@ -323,7 +324,7 @@ footer a i{
     ul.menu li{
         width: 100%;
     }
-    
+
     nav{
         position: relative;
         z-index: 121;
