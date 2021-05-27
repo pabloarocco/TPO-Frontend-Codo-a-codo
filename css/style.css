@@ -1,0 +1,329 @@
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url(../img/crossword.png);
+}
+
+header{
+    width: 960px;
+    height: 80px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p{
+    font-size: 18px;
+}
+
+nav{
+    display: inline;
+}
+
+.logo{
+    width: auto;
+    height: 80px;
+}
+
+section{
+    width: 960px;
+    min-height: 550px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    background-color: lightgray;
+    text-align: center;
+}
+
+/* MENU */
+ul.menu{
+    list-style: none;
+    float: right;
+}
+
+ul.menu li{
+    float:left;
+    display: inline;
+    text-align:center;
+    margin-top: 10px;
+}
+
+.menu li>a{
+    background-image: url(../img/grey_wash_wall.png);
+    color: white;
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+    min-width: 70px;
+    border-radius: 5px;
+    margin: 2px;
+}
+
+.menu li>a:hover{
+    color: #000;
+    background-image: none;
+    background-color: #eaeaea;
+}
+
+/* GALERIA DE FOTOS */
+.galeria{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 10px;
+}
+
+.galeria img{
+    border-radius:15px;
+    width:100%;
+    float: left;
+    padding: 5px;
+}
+
+/* NOSOTROS */
+#nosotros img{
+    float: right;
+    width: 400px;
+    height: auto;
+    margin: 30px 15px 15px 15px;
+}
+
+#nosotros article{
+    width: 500px;
+    padding: 10px;
+    text-align: justify;
+}
+
+#nosotros article::first-letter{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* CONTACTO */
+/* FORMULARIO CONTACTO */
+#contacto{
+    width: 400PX;
+    margin: 10px 10px 0px 40px;
+    align-content: center;
+    float: left;
+}
+
+input[type=text], select, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+label {
+    padding: 5px;
+    display: inline-block;
+}
+
+input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+#contacto h3{
+    color: white;
+    font-family:fantasy;
+}
+
+#datosContacto{
+    width: auto;
+    height: 130px;
+    float: right;
+    background-color:tomato;
+    border-radius: 5px;
+    padding:5px;
+    margin: 40px 40px 10px 10px;
+    color: white;
+}
+
+/* FOOTER */
+footer{
+    width: 960px;
+    height: 80px;
+    background-image: url(../img/grey_wash_wall.png);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: lightgray;
+}
+
+footer img{
+    width: 30px;
+    height: auto;
+    margin: 5px;
+}
+
+/* CAROUSEL BOOTSTRAP */
+.carousel-item{
+    height: 500px;
+} 
+
+
+/*  RESPONSIVE  */
+@media all and (min-width: 600px) and (max-width:1023px){
+    .logo{
+        margin-top: 10px;
+        height: 50px;
+    }
+
+    header{
+        width: 580px;
+        height: 50px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    section{
+        width: 580px;
+        min-height: 720px;
+        justify-content: center;
+    }
+
+    .menu li>a{
+        padding: 5px;
+        margin: 1px;
+    }
+
+    #nosotros img{
+        width: 50%;
+    }
+
+    footer{
+        width: 580px;
+    }
+
+    .galeria{
+        width: 580px;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        grid-gap: 5px;
+    }
+
+    #contacto{
+        margin-left: 90px;
+    }
+
+    #datosContacto{
+        margin-right: 95px;
+    }
+
+}
+
+@media all and (min-width:320px) and (max-width:599px){
+    header{
+        width: 320px;
+    }
+
+    section{
+        width: 320px;
+    }
+
+    footer{
+        width: 320px;
+        float: none;
+
+    }
+
+    ul.menu{
+        width: 320px;
+    }
+
+    ul.menu li{
+        display: inline;
+    }
+
+    .menu li>a{
+        padding: 5px 2px 5px 2px;
+        min-width: 10px;
+        margin: 1px;
+    }
+    #nosotros img{
+        float: none;
+        width: 270px;
+    }
+
+    #nosotros article{
+        width: 270px;
+    }
+
+    #contacto{
+        width: 300px;
+        margin-left: 10px;;
+    }
+    
+    #datosContacto{
+        margin: 5px 0px 5px 0px;
+        height: 150px;
+    }
+
+    .galeria{
+        width: 270px;
+        grid-gap: 2px;
+    }
+    .galeria img{
+        margin-left: 15px;
+    }
+}
+
+@media all and (max-width:319px){
+    .logo{
+        height: 40px;
+    }
+
+    header{
+        width: 100%;
+        height: 40px;
+    }
+
+    p{
+        font-size: 8px;
+    }
+
+    section{
+        width: 100%;
+        height: auto;
+    }
+
+    footer{
+        width: 100%;
+        height: auto;
+
+    }
+    #nosotros img{
+        width: 100%;
+    }
+
+    #nosotros article{
+        width: 100%;
+    }
+
+    #contacto{
+        width: 100%;
+        margin: auto;
+    }
+
+    #datosContacto{
+        width: 100%;
+        margin: auto;
+    }
+
+    ul.menu li{
+        width: 100%;
+    }
+
+    .galeria{
+        width: 100%;
+    }
+}
